@@ -1,0 +1,83 @@
+/* Allgemeine Einstellungen */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../files/HintergrundWebsite.jpg'); /* Hintergrundbild einfügen */
+    background-size: cover; /* Das Bild soll den gesamten Bereich ausfüllen */
+    background-position: center; /* Das Bild wird zentriert */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    color: #f0f0f0;
+    height: 100%; /* Notwendig für Flexbox */
+}
+/* Wrapper für die gesamte Seite */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Der Wrapper nimmt die gesamte Höhe ein */
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Dunklerer Hintergrund */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f0db4f; /* Gelber Hintergrund */
+    color: #1a1a1a;
+}
+
+/* Über mich */
+section {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+ul {
+    color: #ddd;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f0db4f;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px;
+    margin-top: auto; /* Lässt den Footer immer unten stehen */
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
